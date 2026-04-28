@@ -1,30 +1,330 @@
-<html>
-        
-      
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Renata Hernández Hernández</title>
+
+    <style>
+
+        @page{
+            size: A4;
+            margin: 0;
+        }
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            color: #4a4a4a;
+            background-color: #f3f0f7;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .cv-container{
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            background: #ffffff;
+            display: grid;
+            grid-template-columns: 32% 68%;
+            box-shadow: 0 0 20px rgba(106, 13, 173, 0.15);
+        }
+
+        /* SIDEBAR */
+
+        .sidebar{
+            background-color: #4b2c6d;
+            color: white;
+            padding: 30px 25px;
+        }
+
+        .photo-container{
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .photo-container img{
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid #d1b3ff;
+            object-fit: cover;
+            background-color: white;
+        }
+
+        .sidebar h2{
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid #d1b3ff;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            letter-spacing: 1px;
+            color: #d1b3ff;
+        }
+
+        .info-list{
+            list-style: none;
+            padding: 0;
+            font-size: 0.9rem;
+        }
+
+        .info-list li{
+            margin-bottom: 12px;
+        }
+
+        .skill-tag{
+            display: inline-block;
+            background: rgba(209, 179, 255, 0.2);
+            padding: 6px 12px;
+            margin: 5px 0;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            width: 90%;
+            border: 1px solid rgba(209, 179, 255, 0.4);
+        }
+
+        /* CONTENIDO */
+
+        .main-content{
+            padding: 40px;
+        }
+
+        .header{
+            border-bottom: 4px solid #7d5ba6;
+            margin-bottom: 25px;
+        }
+
+        .header h1{
+            margin: 0;
+            font-size: 2.3rem;
+            color: #4b2c6d;
+            text-transform: uppercase;
+        }
+
+        .header p{
+            font-size: 1.2rem;
+            color: #9b59b6;
+            font-weight: 600;
+            margin: 5px 0 15px;
+        }
+
+        .section-title{
+            color: #4b2c6d;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin: 25px 0 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title::after{
+            content: "";
+            flex: 1;
+            height: 2px;
+            background: #e1d5f2;
+            margin-left: 15px;
+        }
+
+        .content-p{
+            font-size: 0.95rem;
+            text-align: justify;
+            color: #555;
+        }
+
+        .item{
+            margin-bottom: 20px;
+        }
+
+        .item-title{
+            font-weight: bold;
+            font-size: 1rem;
+            color: #7d5ba6;
+        }
+
+        .item-sub{
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #8e8e8e;
+            margin-bottom: 5px;
+        }
+
+        .list-detail{
+            padding-left: 18px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
     </style>
-  </header>
-  <body>
-    <table>
-      <tr>
-        <th>animales</th>
-        <th>descripcion</th>
-        <th>imagen</th>
-      </tr>
-      <tr>
-        <td>
-          delfin
-        </td>
-        <td>
-          Los delfines son mamíferos marinos cetáceos, caracterizados por su alta inteligencia, cuerpo hidrodinámico y sociabilidad  
-          Miden entre 2 y 3 metros, tienen piel lisa grisácea, aleta dorsal y hocico alargado Son carnívoros
-          , usan la ecolocalización para cazar y viven en grupos complejos, respirando aire a través de un espiráculo
-        </td>
-        <td>
-          <p>
-          <img src="..." style="max-width:100%; height:auto;">
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
+
+</head>
+
+<body>
+
+<div class="cv-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="photo-container">
+
+            <!-- AGREGA TU IMAGEN EN LA MISMA CARPETA -->
+            <img src="WhatsApp Image 2026-04-28 at 11.15.13 AM (1).jpeg" alt="Foto de Renata">
+
+        </div>
+
+        <h2>Datos Personales</h2>
+
+        <ul class="info-list">
+            <li><strong>Nacimiento:</strong> 30/05/2008</li>
+            <li><strong>Edad:</strong> 17 años</li>
+            <li><strong>Nacionalidad:</strong> Mexicana</li>
+        </ul>
+
+        <h2>Contacto</h2>
+
+        <ul class="info-list">
+            <li>📞 7122697347</li>
+            <li>✉️ renahdz49@gmail.com</li>
+            <li>✉️ renatahernandezhernandez997@gmail.com</li>
+            <li>📍 Adolfo López Mateos, Jocotitlán, Edo. Méx.</li>
+        </ul>
+
+        <h2>Idiomas</h2>
+
+        <ul class="info-list">
+            <li><strong>Inglés:</strong> Nivel B2 (90%)</li>
+            <li><strong>Francés:</strong> Nivel A2 (75%)</li>
+            <li><strong>Alemán:</strong> Nivel A1 (10%)</li>
+            <li>2023 - 2025</li>
+        </ul>
+
+        <h2>Habilidades</h2>
+
+        <div class="skill-tag">💡 Innovación y Creatividad</div>
+        <div class="skill-tag">🚗 Ingeniería Mecatrónica</div>
+        <div class="skill-tag">🌐 Redes Sociales y Tecnología</div>
+        <div class="skill-tag">🎨 Dibujo y Pintura</div>
+
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <main class="main-content">
+
+        <header class="header">
+            <h1>Renata Hernández Hernández</h1>
+            <p>Futura Ingeniera Mecatrónica</p>
+        </header>
+
+        <section>
+
+            <h2 class="section-title">Sobre Mí</h2>
+
+            <p class="content-p">
+                Estudiante de nivel medio superior en sexto semestre. 
+                Me apasionan las artes como el dibujo y la pintura, además 
+                de la tecnología y el área automotriz. Me considero una persona 
+                sociable, alegre y carismática. Trabajo con disciplina para cumplir 
+                mi meta de convertirme en ingeniera automotriz, destacando por mi 
+                capacidad de adaptación, organización y compromiso.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2 class="section-title">Formación Académica</h2>
+
+            <div class="item">
+
+                <div class="item-title">
+                    Educación Media Superior
+                </div>
+
+                <div class="item-sub">
+                    <span>Preparatoria</span>
+                    <span>2023 - 2026</span>
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <div class="item-title">
+                    Curso de Tecnología e Inglés
+                </div>
+
+                <div class="item-sub">
+                    <span>Fundamentos del soporte técnico</span>
+                    <span>Enero 2026</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2 class="section-title">Cursos y Certificaciones</h2>
+
+            <div class="item">
+
+                <div class="item-title">
+                    Administración de Recursos Humanos
+                </div>
+
+                <div class="item-sub">
+                    <span>Coursera</span>
+                    <span>2026</span>
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <div class="item-title">
+                    Introducción a la Química
+                </div>
+
+                <ul class="list-detail">
+                    <li>Estadística y Probabilidad</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2 class="section-title">
+                Intereses
+            </h2>
+
+            <ul class="list-detail">
+                <li>
+                    Desarrollo de habilidades en programación básica y electrónica aplicada en sistemas automotrices.
+                </li>
+
+                <li>
+                    Expresión creativa mediante pintura y dibujo técnico.
+                </li>
+
+                <li>
+                    Armado de prototipos con Arduino, sensores y luces automáticas.
+                </li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
 </html>
+```
